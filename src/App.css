@@ -1,0 +1,23 @@
+#book{
+  border-radius: 50%;
+  width:60px;
+  border:2px dashed brown ;
+  padding:5px;
+   
+}
+.animate{
+  animation-duration: 5s;
+  animation-name:slide;
+  animation-timing-function: ease-in-out;
+  transform:transitionX(300px);
+
+
+}
+@keyframes slide{
+  0%{
+    transform: translateX(0);
+  }
+  30%{ transform: translateX(200px) rotate(360deg); transform:scale(1.5)}
+  70%{ transform: translateX(400px) rotate(720deg);}
+  100%{ transform: translateX(0);}
+}
